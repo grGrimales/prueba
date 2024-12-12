@@ -94,9 +94,13 @@ object BundlePromotions {
 
 object BundlePricingUtil {
 
+
+  /**
+    * Group cart items by catalog item
+    * @param cartItems the cart items to group
+    * @return the cart items grouped by catalog item
+    */
   def groupCartItem(cartItems: Seq[CartItem]): Seq[CartItem] = {
-    // check if all items are well grouped and group them
-    // Example (Apple, qt 1) (Apple, qt 1) become (Apple, qt 2)
     cartItems.groupBy(_.catalogItem).map{
       case (item, toGroupItems) => CartItem(item, Quantity(toGroupItems.map(_.quantity.value).sum))
     }.toSeq
