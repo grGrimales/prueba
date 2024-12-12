@@ -1,8 +1,8 @@
-package yoppworks.hackerchallenges.bundlepricing
+package hackerchallenges.bundlepricing
 
-import yoppworks.hackerchallenges.bundlepricing.domain.BundlePricingDomain._
-import yoppworks.hackerchallenges.bundlepricing.domain.BundlePromotions.{BundleDiscountOnItemUnitPrice, BundleTotalPriceDiscount, MaybeDiscountedItem}
-import yoppworks.hackerchallenges.bundlepricing.services.BundlePricingService
+import hackerchallenges.bundlepricing.services.BundlePricingService
+import hackerchallenges.bundlepricing.domain.BundlePricingDomain._
+import hackerchallenges.bundlepricing.domain.BundlePromotions.{BundleDiscountOnItemUnitPrice, BundleTotalPriceDiscount, MaybeDiscountedItem}
 
 /**
   * App.main is a sample of how to use the pricing service, you can edit it to run the code of your choice

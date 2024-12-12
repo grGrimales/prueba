@@ -1,9 +1,9 @@
-package yoppworks.hackerchallenges.bundlepricing.services
+package hackerchallenges.bundlepricing.services
 
-import yoppworks.hackerchallenges.bundlepricing.domain.BundlePricingDomain._
-import yoppworks.hackerchallenges.bundlepricing.usecases.CalculatePriceWithBundles.calculatePriceWithBundles
-import yoppworks.hackerchallenges.bundlepricing.usecases.FindApplicableBundles.findApplicableBundles
-import yoppworks.hackerchallenges.bundlepricing.usecases.IsCartValid.isCartValid
+import hackerchallenges.bundlepricing.domain.BundlePricingDomain._
+import hackerchallenges.bundlepricing.usecases.CalculatePriceWithBundles.calculatePriceWithBundles
+import hackerchallenges.bundlepricing.usecases.FindApplicableBundles.findApplicableBundles
+import hackerchallenges.bundlepricing.usecases.IsCartValid.isCartValid
 
 import scala.util.Try
 

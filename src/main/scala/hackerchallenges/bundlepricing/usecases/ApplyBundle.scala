@@ -1,6 +1,6 @@
-package yoppworks.hackerchallenges.bundlepricing.usecases
+package hackerchallenges.bundlepricing.usecases
 
-import yoppworks.hackerchallenges.bundlepricing.domain.BundlePricingDomain.{BundlePromotion, Cart, CartItem, Quantity}
+import hackerchallenges.bundlepricing.domain.BundlePricingDomain.{BundlePromotion, Cart, CartItem, Quantity}
 
 object ApplyBundle {
 

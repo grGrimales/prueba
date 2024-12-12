@@ -1,8 +1,8 @@
-package yoppworks.hackerchallenges.bundlepricing.usecases
+package hackerchallenges.bundlepricing.usecases
 
-import yoppworks.hackerchallenges.bundlepricing.domain.BundlePricingDomain.{BundlePromotion, Cart, Price}
-import yoppworks.hackerchallenges.bundlepricing.usecases.ApplyBundle.applyBundle
-import yoppworks.hackerchallenges.bundlepricing.usecases.CalculatePriceWithoutBundles.calculatePriceWithoutBundles
+import hackerchallenges.bundlepricing.domain.BundlePricingDomain.{BundlePromotion, Cart, Price}
+import ApplyBundle.applyBundle
+import CalculatePriceWithoutBundles.calculatePriceWithoutBundles
 
 object CalculatePriceWithBundles {
 

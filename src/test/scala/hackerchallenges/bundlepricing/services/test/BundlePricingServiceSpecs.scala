@@ -1,11 +1,11 @@
-package yoppworks.hackerchallenges.bundlepricing.services.test
+package hackerchallenges.bundlepricing.services.test
 
+import hackerchallenges.bundlepricing.services.BundlePricingService
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
-import yoppworks.hackerchallenges.bundlepricing.domain.BundlePricingDomain._
-import yoppworks.hackerchallenges.bundlepricing.domain.BundlePromotions._
-import yoppworks.hackerchallenges.bundlepricing.services.BundlePricingService
-import yoppworks.hackerchallenges.bundlepricing.usecases.IsCartValid.isCartValid
+import hackerchallenges.bundlepricing.domain.BundlePricingDomain._
+import hackerchallenges.bundlepricing.domain.BundlePromotions._
+import hackerchallenges.bundlepricing.usecases.IsCartValid.isCartValid
 
 import scala.util.{Failure, Success}
 
