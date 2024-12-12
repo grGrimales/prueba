@@ -1,10 +1,11 @@
-package yoppworks.hackerchallenges.bundlepricing.test
+package yoppworks.hackerchallenges.bundlepricing.services.test
 
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
-import yoppworks.hackerchallenges.bundlepricing.BundlePricingDomain._
-import yoppworks.hackerchallenges.bundlepricing.BundlePromotions._
-import yoppworks.hackerchallenges.bundlepricing.BundlePricingService
+import yoppworks.hackerchallenges.bundlepricing.domain.BundlePricingDomain._
+import yoppworks.hackerchallenges.bundlepricing.domain.BundlePromotions._
+import yoppworks.hackerchallenges.bundlepricing.services.BundlePricingService
+import yoppworks.hackerchallenges.bundlepricing.usecases.IsCartValid.isCartValid
 
 import scala.util.{Failure, Success}
 
@@ -138,11 +139,12 @@ class BundlePricingServiceSpecs extends AnyFlatSpec with Matchers {
   }
 
   it should "be able to detect invalid cart" in {
-    ps.isCartValid(
+    isCartValid(
       Cart(Seq(
         CartItem(CatalogItem("Pink Apple", Price(300)), Quantity(10))
         // unfortunately Pink apple is no longer in catalog
-      ))
+      )),
+      catalogExample
     ) shouldBe (false)
   }
 
